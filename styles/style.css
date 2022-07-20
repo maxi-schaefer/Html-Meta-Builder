@@ -1,0 +1,270 @@
+/* ================================ Font Import ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ================================ Defaults ================================ */
+:root {
+    --background-color: #0e0e0e;
+    --font-color: #fff;
+    --default: #75a1ff;
+    --elements-background: #111111;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--default);
+    border-radius: 4px;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* ================================ Templates ================================ */
+.txt-box {
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: white;
+
+    background: var(--default);
+    background-repeat: no-repeat;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.color_container {
+    position: relative;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .color {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 58px;
+    height: 58px;
+    border: none;
+    cursor: pointer;
+  }
+
+/* ================================ Settings ================================ */
+.settings-form {
+    height: 400px;
+    background-color: var(--elements-background);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* ================================ Preview ================================ */
+.preview {
+    height: 400px;
+    background-color: var(--elements-background);
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    margin-left: 35px;
+    color: var(--font-color);
+    width: 333px;
+}
+
+/* ================================ Discord Preview ================================ */
+.discord {
+    background-color: #23272a;
+    border-radius: 4px;
+    border-left: 4px solid var(--default);
+    height: 115px;
+    display: flex;
+}
+
+.discord .title {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    cursor: pointer;
+    transition: all .4s ease;
+    font-weight: bold;
+}
+
+.discord .title:hover {
+    text-decoration: underline;
+}
+
+.discord p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.801);
+    text-align: left;
+    padding-left: 15px;
+    word-break: normal;
+}
+
+.discord .image {
+    position: absolute;
+    margin-left: 230px;
+    text-align: right;
+    align-items: right;
+    display: flex;
+    padding-top: 13px;
+}
+
+.discord .image img {
+    border-radius: 4px;
+}
+
+/* ================================ Raw ================================ */
+.raw_text {
+    height: 400px;
+    background-color: var(--elements-background);
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    resize: none;
+    margin-left: 35px;
+    color: var(--font-color);
+    width: 333px;
+}
+
+.raw_text:focus {
+    border: none;
+    outline: none;
+}
+
+/* ================================ Responsive ================================ */
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .settings {
+        margin-top: 400px;
+    }
+
+    .discord .image {
+        position: absolute;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* ================================ footer ================================ */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
+    padding-bottom: 10px;
+    width: 100vw;
+    margin-bottom: -5px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================================ socials ================================ */
+.socials {
+    left: 15px;
+    list-style: none;
+    position: fixed;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.socials a {
+    color: rgba(73, 73, 73, 0.6);
+    font-size: 25px;
+    transition: all .2s ease;
+}
+
+.socials li {
+    transition: all .2s ease;
+}
+
+.socials li .color_container {
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
+}
+
+.socials li:hover a{
+    color: var(--default);
+    text-shadow: 0px 0px 4px var(--default);
+    transform: translateY(-5px);
+}
+
+/* ================================ particle-js ================================ */
+#particles-js {
+    position:absolute;
+    opacity: 0.4;
+    z-index:-999;
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Meta Builder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- SVG Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div id="particles-js"></div>
+
+        <!-- Socials -->
+        <ul class="socials">
+            <li><a href="https://gokiimax.github.io"><i class="fa-solid fa-globe"></i></a></li>
+            <li><a href="https://github.com/gokiimax"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://twitter.com/gokimax_x"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCjqJ3HJkiyu12fzFKIGEovQ"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://tiktok.com/@maxii.x6"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://instagram.com/maxii.x6"><i class="fa-brands fa-instagram"></i></a></li>
+            <li>                
+                <div class="color_container">
+                    <input type="color" value="#75a1ff" class="color" id="theme_color">
+                </div>
+            </li>
+        </ul>
+
+        <!-- Settings -->
+        <div class="settings">
+            <h3>Settings</h3>
+            <div class="settings-form">
+                <!-- Title -->
+                <label for="meta_title">Title</label>
+                <input type="text" spellcheck="false" value="Title"  class="txt-box" autocomplete="off" id="meta_title">
+    
+                <!-- Description -->
+                <label for="meta_description">Description</label>
+                <input type="text" spellcheck="false" value="Description" class="txt-box" autocomplete="off" id="meta_description">
+    
+                <!-- Title -->
+                <label for="meta_url">Url</label>
+                <input type="text" spellcheck="false" value="https://github.com/gokiimax" class="txt-box" autocomplete="off" id="meta_url">
+
+                <!-- Image -->
+                <label for="meta_image">Image</label>
+                <input type="text" spellcheck="false" value="https://github.com/gokiimax.png" class="txt-box" autocomplete="off" id="meta_image">
+    
+                <!-- Color -->
+                <label for="meta_color">Color</label>
+                <div class="color_container">
+                    <input type="color" value="#75a1ff" class="color" id="meta_color">
+                </div>
+                <!-- Update -->
+                <button class="btn" id="update_button">Update</button>
+            </div>
+        </div>
+
+        <!-- Preview -->
+        <div class="preview-container">
+            <h3>Preview</h3>
+            <div class="preview">
+                <!-- Discord -->
+                <h4>Discord</h4>
+                <div id="discord_preview" class="discord">
+                    <!-- Main -->
+                    <div class="wrapper">
+                        <div id="discord_title" class="title"><a>Title</a></div>
+                        <p class="description" id="discord_description">Description</p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="image">
+                        <img id="discord_image" src="https://github.com/gokiimax.png" width="90" height="90" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Raw -->
+        <div class="raw">
+            <h3>Raw</h3>
+            <textarea cols="30" rows="10" class="raw_text" id="raw_text" readonly>
+            </textarea>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/meta.js"></script>
+        <script src="js/theme_color.js"></script>
+
+    </div>
+    
+</body>
+</html>
