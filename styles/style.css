@@ -101,7 +101,7 @@ h3{
 
 /* ================================ Settings ================================ */
 .settings-form {
-    height: 400px;
+    height: 536px;
     background-color: var(--elements-background);
     padding: 15px;
     border-radius: 12px;
@@ -113,7 +113,7 @@ h3{
 
 /* ================================ Preview ================================ */
 .preview {
-    height: 400px;
+    height: 536px;
     background-color: var(--elements-background);
     padding: 15px;
     border-radius: 12px;
@@ -173,7 +173,7 @@ h3{
 
 /* ================================ Raw ================================ */
 .raw_text {
-    height: 400px;
+    height: 536px;
     background-color: var(--elements-background);
     padding: 15px;
     border-radius: 12px;
@@ -262,6 +262,24 @@ footer {
     color: var(--default);
     text-shadow: 0px 0px 4px var(--default);
     transform: translateY(-5px);
+}
+
+/* ================================ Checkbox ================================ */
+.checkbox_container {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 225px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.checkbox_container .checkbox:checked {
+    accent-color: var(--default);
+}
+
+.checkbox_container .checkbox {
+    cursor: pointer;
 }
 
 /* ================================ particle-js ================================ */

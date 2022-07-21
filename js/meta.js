@@ -4,6 +4,8 @@ var meta_description = document.getElementById("meta_description")
 var meta_url = document.getElementById("meta_url")
 var meta_image = document.getElementById("meta_image")
 var meta_color = document.getElementById("meta_color")
+var meta_author = document.getElementById("meta_author")
+var meta_author_enabled = document.getElementById("meta_author_enabled")
 
 let text = ''
 
@@ -54,6 +56,15 @@ name="theme-color"></meta>`
 content="${meta_image.value}" 
 property="og:image">  `
     }
+
+    if(meta_author_enabled.checked && meta_author.value) {
+        text +=
+`\n\n<!-- Author -->
+<meta 
+content="${meta_author.value}" 
+name="author">`
+    } 
+
 
     raw_textbox.value = text
     

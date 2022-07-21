@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Meta Builder</title>
 
+    <!-- Title -->
+    <meta 
+    content="Meta Tag Builder" 
+    property="og:title">
+
+    <!-- Description -->
+    <meta 
+    content="Create meta tags for your website and copy the raw code snippets" 
+    property="og:description">
+
+    <!-- Url -->
+    <meta 
+    content="https://gokiimax.github.io/meta-builder" 
+    property="og:url">
+
+    <!-- Color -->
+    <meta 
+    content="#63ace3" 
+    data-react-helmet="true" 
+    name="theme-color"></meta>
+
+    <!-- Image -->
+    <meta 
+    content="https://gokiimax.github.io/meta-builder/favicon.ico" 
+    property="og:image">  
+
+    <!-- Author -->
+    <meta 
+    content="gokiimax" 
+    name="author">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -41,24 +72,31 @@
             <div class="settings-form">
                 <!-- Title -->
                 <label for="meta_title">Title</label>
-                <input type="text" spellcheck="false" value="Title"  class="txt-box" autocomplete="off" id="meta_title">
+                <input type="text" spellcheck="false" placeholder="Title must be within 70 Characters"  class="txt-box" autocomplete="off" id="meta_title">
     
                 <!-- Description -->
                 <label for="meta_description">Description</label>
-                <input type="text" spellcheck="false" value="Description" class="txt-box" autocomplete="off" id="meta_description">
+                <input type="text" spellcheck="false" placeholder="Description must be within 150 Characters" class="txt-box" autocomplete="off" id="meta_description">
     
                 <!-- Title -->
                 <label for="meta_url">Url</label>
-                <input type="text" spellcheck="false" value="https://github.com/gokiimax" class="txt-box" autocomplete="off" id="meta_url">
+                <input type="text" spellcheck="false" placeholder="Url must be a valid link" class="txt-box" autocomplete="off" id="meta_url">
 
                 <!-- Image -->
                 <label for="meta_image">Image</label>
-                <input type="text" spellcheck="false" value="https://github.com/gokiimax.png" class="txt-box" autocomplete="off" id="meta_image">
+                <input type="text" spellcheck="false" placeholder="Image must be a valid link or file" class="txt-box" autocomplete="off" id="meta_image">
     
+                <!-- Autor -->
+                <label >Autor</label>
+                <label class="checkbox_container">Enabled
+                    <input type="checkbox" id="meta_author_enabled" checked="checked" class="checkbox">
+                  </label>
+                <input type="text" spellcheck="false" class="txt-box" autocomplete="off" id="meta_author">
+
                 <!-- Color -->
                 <label for="meta_color">Color</label>
                 <div class="color_container">
-                    <input type="color" value="#75a1ff" class="color" id="meta_color">
+                    <input type="color"  value="#75a1ff" class="color" id="meta_color">
                 </div>
                 <!-- Update -->
                 <button class="btn" id="update_button">Update</button>
