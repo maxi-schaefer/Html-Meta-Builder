@@ -146,6 +146,10 @@ h3{
     text-decoration: underline;
 }
 
+.discord .wrapper {
+    width: 215px;
+}
+
 .discord p {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.801);
