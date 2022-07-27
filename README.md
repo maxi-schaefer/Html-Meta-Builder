@@ -1,5 +1,11 @@
 ![demo](./images/demo.png)
 
+	<p align="center">
+		<a href="https://discord.gg/yVWygKS3Xn">
+			<img src="https://canary.discordapp.com/api/guilds/999373116918743100/embed.png" alt="Discord server">
+		</a>
+	</p>
+
 # Html-Meta-Builder
 A website, where you can build meta tags
 - Released 20.07.2022
